@@ -1,68 +1,107 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 60vh;    
+  background-color: #f0f2f5; 
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.app {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  gap: 1rem;              
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+
+.app h1 {
+  margin: 0 0 1rem 0; /* Adjust heading margin */
+  color: #333;
 }
-body {
-  margin: 0;
+
+.app input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
-.app{
-  padding: 2rem 1rem;
-}
-h1{
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-input{
-  appearance: none;
+
+.app button {
+  padding: 10px 20px;
   border: none;
-  outline: none;
-  width: 100%;
-  max-width: 300px;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem;
-  margin-right: 1rem;
-  font-size: 1.2rem;
-}
-button{
-  appearance: none;
-  border: none;
-  outline: none;
-  padding: 1rem 1rem;
-  border-radius: 0.5rem;
-  background-color: #646cff;
+  background-color: #007bff;
   color: white;
-  font-weight: 500;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
-img{
-  display: block;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 480px;
+
+.app button:hover {
+  background-color: #0056b3;
+}
+
+.app img {
+  margin-top: 1rem;
+  border: 1px solid #eee;
+  padding: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.app a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.app a:hover {
+  background-color: #218838;
+}
+
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+  .app {
+    /* Make the app container slightly smaller on tablets */
+    width: 80%;
+    padding: 1.5rem;
+  }
+}
+
+/* Media Query specifically for smaller mobile devices */
+@media (max-width: 480px) {
+  .center {
+    /* Remove padding to use full screen width */
+    padding: 0;
+    align-items: flex-start; /* Align box to the top */
+    padding-top: 2rem;
+  }
+
+  .app {
+    /* Make the app box take up the full width */
+    width: 100%;
+    height: 100%;
+    border-radius: 0; /* Remove rounded corners for a full-screen feel */
+    box-shadow: none; /* Remove shadow on mobile */
+  }
+
+  .app h1 {
+    font-size: 1.8rem; /* Make the title a bit smaller */
+  }
+
+  .app input {
+    width: 90%; /* Make the input field responsive */
+  }
 }
