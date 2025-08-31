@@ -1,12 +1,42 @@
-# React + Vite
+# 🚀 CodeSnap - QR Code Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CodeSnap ek simple aur fast **QR Code Generator Website** hai jisme users apna text, URL ya contact info dal kar instantly QR code generate kar sakte hain.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- ✅ Instant QR Code Generation
+- ✅ Supports text, links, email, contact info etc.
+- ✅ Download QR Code as PNG/JPG
+- ✅ Responsive & User-Friendly UI
+- ✅ Free to use
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Screenshots
+(Add screenshots here later)
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript (or React.js / Tailwind CSS if used)
+- **Backend (optional):** Node.js / Express.js
+- **Library:** [qrcode.js](https://github.com/davidshimjs/qrcodejs) or npm package `qrcode`
+
+---
+
+## 🚀 Installation & Setup
+```bash
+# Clone the repo
+git clone https://github.com/USERNAME/codesnap.git
+
+# Go to project folder
+cd codesnap
+
+# Install dependencies (if using Node.js/React)
+npm install
+
+# Run project
+npm start
+
+2025 copyright all rights reserved
