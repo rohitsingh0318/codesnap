@@ -38,3 +38,5 @@ npm install
 
 # Run project
 npm start
+
+2025 copyright all rights reserved
